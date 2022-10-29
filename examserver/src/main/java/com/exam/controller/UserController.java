@@ -13,7 +13,7 @@ import java.util.Set;
 @RestController
 @RequestMapping("/user")
 @CrossOrigin("*")
-public class UserContoller
+public class UserController
 {
     @Autowired
     private UserService userService;
@@ -51,4 +51,7 @@ public class UserContoller
     }
 
     //update api
+
+//    @ExceptionHandler(UserNotFoundException.class)
+//    public ResponseEntity<?> exceptionHandler(UserNotFoundException ex){return ResponseEntity}
 }
