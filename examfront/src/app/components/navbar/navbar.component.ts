@@ -20,13 +20,13 @@ export class NavbarComponent implements OnInit {
        this.user = this.login.getUser();
     });
   }
-  
+  //if create any problem then here you make changes
   public logout()
   {
     this.login.logout();
-    // this.isLoggedIn=false;  ///
-    // this.user=null;  ///
-     this.login.loginStatusSubject.next(false);
-    // window.location.reload();
+     this.isLoggedIn=false;  
+     this.user=null;  
+    //  this.login.loginStatusSubject.next(false);
+     window.location.reload();
   }
 }

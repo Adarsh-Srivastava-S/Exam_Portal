@@ -1,59 +1,60 @@
-<mat-card *ngIF="user">
-    
+<!-- <mat-card *ngIF="user">
+
     <h3>Your Profile Details</h3>
     <mat-card-content>
         <div class="bootstrap-wrapper">
             <div class="container">
                 <div class="container text-center">
-                    <img src="https://www.google.com/search?q=default+profile+image&rlz=1C1ONGR_enIN1027IN1027&sxsrf=ALiCzsbA_ePk4IH5JzL9WS4s2TIssuLt8w:1667079927636&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiKkJjXtIb7AhV9JLcAHWzmAmgQ_AUoAXoECAIQAw&biw=772&bih=728&dpr=1.25#imgrc=eJJ60XVQCTB_IM" alt="" class="src">
-                class="profile-image"
+                    <img src="https://www.google.com/search?q=default+profile+image&rlz=1C1ONGR_enIN1027IN1027&sxsrf=ALiCzsbA_ePk4IH5JzL9WS4s2TIssuLt8w:1667079927636&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiKkJjXtIb7AhV9JLcAHWzmAmgQ_AUoAXoECAIQAw&biw=772&bih=728&dpr=1.25#imgrc=eJJ60XVQCTB_IM"
+                        alt="" class="src">
+                    class="profile-image"
                 </div>
-                <h1 class="mt20"> {{user.firstName}} {{user.lastName}}  </h1>
+                <h1 class="mt20"> {{user.firstName}} {{user.lastName}} </h1>
                 <div class="row">
                     <div class="col-mid-10 offset-md-1"></div>
-<!--table Details-->
-<table class="table text-center">
-<tr>
-    <td>
-        username
-    </td>
-    <td>
-       {{  user.username}}
-        </td>
-</tr>
-<tr>
-    <td>
-        userid
-    </td>
+                    --table Details--
+                    <table class="table text-center">
+                        <tr>
+                            <td>
+                                username
+                            </td>
+                            <td>
+                                {{ user.username}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                userid
+                            </td>
 
-    <td>
-        exam{{user.id}}
-        </td>
-</tr>
-        <tr *ngphone="null">
-            <td>
-                Phone No
-            </td>
-            <td>{{user.phone}}
-                </td>
-        </tr>
-                <tr>
-                    <td>
-                        Role
-                    </td>
-                    <td>
-                        {{user.authorities[0].authority}}
-                        </td>
-                </tr>          
-<tr>
-    <td>
-        Status
-    </td>
-    <td>
-        {{user.enabled?"ACTIVE":"NOT":"NOTACTIVE"}
-        </td>
-</tr>
-</table>
+                            <td>
+                                exam{{user.id}}
+                            </td>
+                        </tr>
+                        <tr *ngphone="null">
+                            <td>
+                                Phone No
+                            </td>
+                            <td>{{user.phone}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Role
+                            </td>
+                            <td>
+                                {{user.authorities[0].authority}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Status
+                            </td>
+                            <td>
+                                {{user.enabled ? "ACTIVE":"NOT"}
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -62,4 +63,4 @@
         <button mat-raised-button color="primary">Update</button>
         <button mat-raised-button color="accent">Share</button>
     </mat-card-actions>
-</mat-card>
+</mat-card> -->
